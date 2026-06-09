@@ -386,7 +386,9 @@ function AddModal({ onAdd, onClose }) {
 }
 
 // ── Main Dashboard ─────────────────────────────────────────────────────────
-export default function Dashboard() {
+// Named "App" so the file can be pasted directly over src/App.jsx in
+// StackBlitz / CodeSandbox React templates with zero edits.
+export default function App() {
   const [stocks,       setStocks]       = useState(() => lsGet(LS_KEYS.stocks,  DEFAULT_STOCKS));
   const [other,        setOther]        = useState(() => lsGet(LS_KEYS.other,   DEFAULT_OTHER));
   const [goal,         setGoal]         = useState(() => lsGet(LS_KEYS.goal,    DEFAULT_GOAL));
